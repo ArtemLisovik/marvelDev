@@ -1,6 +1,6 @@
 const Spinner = () => {
     return (
-        <svg version="1.1" id="L1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 100 100" enableBackground="new 0 0 100 100" width="100" height="100" style={{alignSelf: 'center',margin: "0 auto", gridColumn: "span 3", display: 'block', justifySelf: 'center'}}>
+        <svg version="1.1" id="L1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 100 100" enableBackground="new 0 0 100 100" width="100" height="100" style={{alignSelf: 'center',margin: "0 auto", gridColumn: "span 4", display: 'block', justifySelf: 'center'}}>
             <circle fill="none" stroke="#9F0013" strokeWidth="6" strokeMiterlimit="15" strokeDasharray="14.2472,14.2472" cx="50" cy="50" r="47" >
                 <animateTransform
                     attributeName="transform"

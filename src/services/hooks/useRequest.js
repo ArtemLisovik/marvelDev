@@ -4,20 +4,6 @@ const useRequest = () => {
     const [loading, setLoading] = useState(false)
     const [error, setError] = useState(null)
 
-    // const request = async (url) => {
-    //     setLoading(true)
-    //     const response = await fetch(url, {method: 'GET', headers: {'Content-type': 'application/json'}})
-
-    //     if (!response.ok) {
-    //         setError(true)
-    //         throw new Error (`Something go wrong, status - ${response.status}`)
-    //     }
-
-    //     setLoading(false)
-
-    //     return response.json()
-    // }
-
     const request = useCallback(async (url, method = 'GET', body = null, headers = { 'Content-type': 'application/json' } ) => {
         setLoading(true)
 

@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
-import useMarvelService from '../../features/useMarvelService';
-import Spinner from '../../shared/Spinner/Spinner';
+import useMarvelService from '../../services/hooks/useMarvelService';
+import Spinner from '../../shared/ui/Spinner/Spinner';
 import Error from '../../shared/ui/Error/Error';
 
 import './randomChar.scss';

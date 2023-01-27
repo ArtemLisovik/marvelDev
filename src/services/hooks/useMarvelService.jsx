@@ -15,6 +15,12 @@ const useMarvelService = () => {
         return modifiedList
     }
 
+    const getAllComics = async () => {
+        const result = await request(`https://gateway.marvel.com:443/v1/public/comics?limit=9&apikey=b9cd5ff800088663996fca66ed987b75`)
+        const modifyedComics = result.data.results.map(comic => _modifyComics(comic))
+        return modifyedComics
+    }
+
     const _modifiedCharacter = (char) => {
         return {
             name: char.name,
@@ -24,8 +30,18 @@ const useMarvelService = () => {
             comics: char.comics.items
         }
     }
+    
+    const _modifyComics = (comics) => {
+        return {
+            id: comics.id,
+            title: comics.title,
+            descr: comics.description,
+            avatar: `${comics.thumbnail.path}.${comics.thumbnail.extension}`
 
-    return {error, loading, getCharacter, clearError, getAllCharacters}
+        }
+    }
+
+    return {error, loading, getCharacter, clearError, getAllCharacters, getAllComics}
 }
 
 export default useMarvelService

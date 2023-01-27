@@ -1,7 +1,7 @@
 import { useState, useCallback, useEffect } from 'react'
-import useMarvelService from '../../features/useMarvelService';
-import Skeleton from '../../shared/Skeleton/Skeleton'
-import Spinner from '../../shared/Spinner/Spinner'
+import useMarvelService from '../../services/hooks/useMarvelService';
+import Skeleton from '../../shared/ui/Skeleton/Skeleton'
+import Spinner from '../../shared/ui/Spinner/Spinner'
 
 import './charInfo.scss';
 

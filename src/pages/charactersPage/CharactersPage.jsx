@@ -1,7 +1,7 @@
 import {useState} from 'react'
 
-import RandomChar from "../../entities/randomChar/RandomChar"
-import CharInfo from "../../entities/charInfo/CharInfo"
+import RandomChar from "../../widgets/randomChar/RandomChar"
+import CharInfo from "../../widgets/charInfo/CharInfo"
 import CharList from "../../widgets/charList/CharList"
 
 import decoration from './vision.png';

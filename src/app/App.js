@@ -1,11 +1,9 @@
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 
 import AppHeader from "../widgets/appHeader/AppHeader";
-import ComicsList from '../widgets/comicsList/ComicsList';
-import Characters from "../pages/Characters/Characters";
+import {ComicsPage, CharactersPage, ComicSoloPage} from '../pages'
 
 const App = () => {
-
 
     return (
         <Router>
@@ -13,8 +11,9 @@ const App = () => {
                 <AppHeader />
                 <main>
                     <Routes>
-                        <Route path='/' element={<Characters />}/>
-                        <Route path='/comics' element={<ComicsList />}/>
+                        <Route path='/' element={<CharactersPage />}/>
+                        <Route path='/comics' element={<ComicsPage />}/>
+                            <Route path='/comics/:id' element={<ComicSoloPage/>}/>
                     </Routes>
                 </main>
             </div>
