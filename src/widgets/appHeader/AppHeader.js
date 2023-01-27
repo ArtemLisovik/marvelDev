@@ -14,7 +14,7 @@ const AppHeader = () => {
                 <ul>
                     <li>
                         <NavLink 
-                        to='/characters'
+                        to='/'
                         style={({isActive}) => ({color: isActive ? '#9F0013' : null})}
                         >Characters</NavLink>
                     </li>

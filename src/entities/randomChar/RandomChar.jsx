@@ -1,12 +1,11 @@
 import { useState, useEffect } from 'react';
 
-import useMarvelService from '../../services/useMarvelService';
-import Spinner from '../Spinner/Spinner';
-import Error from '../Error/Error'
-
+import useMarvelService from '../../features/useMarvelService';
+import Spinner from '../../shared/Spinner/Spinner';
+import Error from '../../shared/ui/Error/Error';
 
 import './randomChar.scss';
-import mjolnir from '../../resources/img/mjolnir.png';
+import mjolnir from './mjolnir.png';
 
 const RandomChar = () => {
     const [character, setCharacter] = useState(null)
